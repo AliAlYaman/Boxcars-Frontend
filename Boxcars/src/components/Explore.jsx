@@ -170,7 +170,7 @@ export const Explore = () => {
                 );
               })
             : null}
-          {activeTab === "popular"
+          {activeTab === "popular" 
             ? popular.map((recent) => {
                 return (
                   <CarCard
