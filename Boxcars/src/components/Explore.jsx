@@ -137,7 +137,7 @@ export const Explore = () => {
             Popular Cars
           </Link>
         </div>
-        <div className="flex  max-md:flex-col max-md:items-start justify-around items-center w-full h-full gap-6">
+        <div className="flex  max-md:flex-col max-md:items-start justify-between items-center w-full h-full gap-6">
           {activeTab === "recent"
             ? recents.map((recent) => {
                 return (
