@@ -5,6 +5,9 @@ import { BrowseType } from "../components/BrowseType";
 import { Explore } from "../components/Explore";
 import { Details } from "../components/Details";
 import { Features } from "../components/Features";
+import { Special } from "../components/Special";
+import { Reviews } from "../components/Reviews";
+import { OurTeam } from "../components/OurTeam";
 
 export const LandingPage = () => {
   return (
@@ -15,6 +18,9 @@ export const LandingPage = () => {
       <Explore/>
       <Details/>
       <Features/>
+      <Special/>
+      <Reviews/>
+      <OurTeam/>
     </>
   );
 }

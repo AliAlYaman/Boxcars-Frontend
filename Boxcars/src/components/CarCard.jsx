@@ -20,15 +20,15 @@ export const CarCard = ({src, title, subtitle, miles, petrol, gear, price}) => {
         {/* Features Section */}
         <div className="flex justify-between items-center w-full mb-4 ">
           <div className="flex flex-col items-center space-x-1 gap-1">
-            <img src="assets/icons/Miles.png" width={20} alt="Miles Icon" />
+            <img src="assets/icons/Miles.png" width={25} alt="Miles Icon" />
             <p className="text-sm text-gray-700">{miles}</p>
           </div>
           <div className="flex flex-col items-center space-x-1 gap-1">
-            <img src="assets/icons/Petrol.png" width={20} alt="Miles Icon" />
+            <img src="assets/icons/Petrol.png" width={25} alt="Miles Icon" />
             <p className="text-sm text-gray-700">{petrol}</p>
           </div>
           <div className="flex flex-col items-center space-x-1 gap-1">
-            <img src="assets/icons/Gear.png" width={20} alt="Gear Icon" />
+            <img src="assets/icons/Gear.png" width={25} alt="Gear Icon" />
             <p className="text-sm text-gray-700">{gear}</p>
           </div>
         </div>

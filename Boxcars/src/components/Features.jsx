@@ -32,7 +32,7 @@ export const Features = () => {
         <p className="text-4xl font-dmSans font-bold">Why Choose Us?</p>
         <div className="flex justify-between max-md:flex-col gap-10 ">
             {features.map((feature)=> {
-                return(<div className="flex flex-col gap-4 bg-gray-300 rounded-xl p-8">
+                return(<div className="flex flex-col gap-4 bg-gray-300 rounded-xl p-8" key={feature.id}>
                     <img src={feature.icon} alt="" width={55}/>
                     <p className="font-dmSans font-medium">{feature.title}</p>
                     <p className="font-dmSans text-sm">{feature.subtitle}</p>
