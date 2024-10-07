@@ -1,6 +1,6 @@
 export const Ad = () => {
     return (
-        <div className="bg-[url('assets/background/Main.png')] bg-cover bg-center h-[500px] w-full flex flex-col items-start justify-center gap-4 text-white px-8 md:px-20 lg:px-40">
+        <div className="bg-[url('assets/images/Main.png')] bg-cover bg-center h-[500px] w-full flex flex-col items-start justify-center gap-4 text-white px-8 md:px-20 lg:px-40">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-dmSans font-medium mb-4 text-start">
                 We Make Finding The<br/>
                 Right Car Simple
