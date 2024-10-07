@@ -48,32 +48,32 @@ export const LandingPage = () => {
     {
       id: 1,
       type: "SUV",
-      icon: "assets/icons/suv.png",
+      icon: "assets/icons/Suv.png",
     },
     {
       id: 2,
       type: "Sedan",
-      icon: "assets/icons/sedan.png",
+      icon: "assets/icons/Sedan.png",
     },
     {
       id: 3,
       type: "Hatchback",
-      icon: "assets/icons/hatchback.png",
+      icon: "assets/icons/Hatchback.png",
     },
     {
       id: 4,
       type: "Coupe",
-      icon: "assets/icons/coupe.png",
+      icon: "assets/icons/Coupe.png",
     },
     {
       id: 5,
       type: "Hybrid",
-      icon: "assets/icons/hybrid.png",
+      icon: "assets/icons/Hybrid.png",
     },
     {
       id: 6,
       type: "Convertible",
-      icon: "assets/icons/convertible.png",
+      icon: "assets/icons/Convertible.png",
     },
   ];
   return (
