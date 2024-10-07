@@ -58,7 +58,7 @@ export const LandingPage = () => {
     {
       id: 3,
       type: "Hatchback",
-      icon: "assets/icons/Hatchback.png",
+      icon: "assets/icons/hatchback.png",
     },
     {
       id: 4,
