@@ -1,6 +1,6 @@
 export const TeamCards = () => {
     return (
-      <div className="flex flex-col justify-between items-start px-8 rounded-xl shadow-xl overflow-hidden max-md:w-full mb-20 w-fit bg-white gap-2">
+      <div className="flex flex-col justify-between items-start px-8 bg-transparent overflow-hidden max-md:w-full mb-20 w-fit  gap-2">
         <img 
           src="assets/images/team.png" 
           alt="Team member" 
