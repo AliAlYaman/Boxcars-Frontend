@@ -5,7 +5,7 @@ export const Ad = () => {
                 We Make Finding The<br/>
                 Right Car Simple
             </h1>
-            <button className="px-10 md:px-12 lg:px-16 py-2 md:py-3 bg-transparent rounded-lg hover:bg-black transition duration-300 font-dmSans font-medium text-sm text-center border">
+            <button className="px-10 md:px-12 lg:px-16 py-2 md:py-3 bg-transparent rounded-lg hover:bg-black transition duration-300 font-dmSans font-medium text-sm text-center border ">
                 Find Out More
             </button>
         </div>
