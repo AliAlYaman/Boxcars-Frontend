@@ -1,17 +1,23 @@
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { LandingPage } from "./pages/LandingPage" 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
+import { LoadingAnimation } from './components/LoadingAnimation';
+
+// Lazy load the pages with named exports
+const LandingPage = lazy(() => import('./pages/LandingPage').then(module => ({ default: module.LandingPage })));
+const ListingPage = lazy(() => import('./pages/ListingPage').then(module => ({ default: module.ListingPage })));
+
 
 function App() {
-  
   return (
-    <>
-      <Router>
+    <Router>
+      <Suspense fallback={<LoadingAnimation />}>
         <Routes>
-          <Route path="/" element={<LandingPage/>}/>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/listings" element={<ListingPage />} />
         </Routes>
-      </Router>
-    </>
-  )
+      </Suspense>
+    </Router>
+  );
 }
 
-export default App
+export default App;

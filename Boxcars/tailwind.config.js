@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors : {
+        primary: '#050B20'
+      },
       fontFamily: {
         dmSans: ['DM Sans']
       }
