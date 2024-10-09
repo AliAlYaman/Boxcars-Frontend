@@ -8,7 +8,7 @@ export const Explore = () => {
   const recents = [
     {
       id: 1,
-      src: "assets/images/gclass.jpg",
+      src: "assets/images/toyota.png",
       title: "G-Class",
       subtitle: "3.5 D5 PowerPulse Momentum 5dr",
       miles: "20",
@@ -18,7 +18,7 @@ export const Explore = () => {
     },
     {
       id: 2,
-      src: "assets/images/gclass.jpg",
+      src: "assets/images/gcl.png",
       title: "G-Class",
       subtitle: "3.5 D5 PowerPulse Momentum 5dr",
       miles: "20",
@@ -28,7 +28,7 @@ export const Explore = () => {
     },
     {
       id: 3,
-      src: "assets/images/gclass.jpg",
+      src: "assets/images/ford.png",
       title: "G-Class",
       subtitle: "3.5 D5 PowerPulse Momentum 5dr",
       miles: "20",
@@ -40,7 +40,7 @@ export const Explore = () => {
   const featured = [
     {
       id: 1,
-      src: "assets/images/ml.jpg",
+      src: "assets/images/class.png",
       title: "G-Class",
       subtitle: "3.5 D5 PowerPulse Momentum 5dr",
       miles: "20",
