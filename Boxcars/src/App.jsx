@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
 import { LoadingAnimation } from './components/LoadingAnimation'; 
-
+import {SignIn} from './components/Signin';
+import {Register} from './components/Register';
 
 // Lazy load the pages with named exports
 const LandingPage = lazy(() => import('./pages/LandingPage').then(module => ({ default: module.LandingPage })));
 const ListingPage = lazy(() => import('./pages/ListingPage').then(module => ({ default: module.ListingPage })));
-const SignIn = lazy(()=> import('./components/SignIn').then(module => ({ default: module.SignIn })));
-const Register = lazy(()=> import('./components/Register').then(module => ({ default: module.Register })));
+
 
 function App() {
   return (
