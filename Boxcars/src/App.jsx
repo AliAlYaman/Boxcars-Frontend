@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
-import { LoadingAnimation } from './components/LoadingAnimation';
+import { LoadingAnimation } from './components/LoadingAnimation'; 
 
 
 // Lazy load the pages with named exports
