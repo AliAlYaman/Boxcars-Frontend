@@ -14,4 +14,12 @@
     background-image: url('assets/background/Main.png');
   } */
 
+  .range-input::-webkit-slider-runnable-track {
+    @apply bg-[#405FF2] h-2 rounded-lg;
+  }
+  .range-input::-webkit-slider-thumb {
+    @apply w-4 h-4 bg-[#405FF2] rounded-full cursor-pointer;
+    -webkit-appearance: none;
+    margin-top: -6px; /* Centers thumb with track */
+  }
   

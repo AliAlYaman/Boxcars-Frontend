@@ -7,6 +7,7 @@ import {Register} from './components/Register';
 // Lazy load the pages with named exports
 const LandingPage = lazy(() => import('./pages/LandingPage').then(module => ({ default: module.LandingPage })));
 const ListingPage = lazy(() => import('./pages/ListingPage').then(module => ({ default: module.ListingPage })));
+const Blog = lazy(() => import('./pages/Blog').then(module => ({ default: module.Blog })));
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/listings" element={<ListingPage />} />
           <Route path="/signin" element={<SignIn/>} />
           <Route path="/register" element={<Register/>} />
+          <Route path="/blog" element={<Blog/>} />
         </Routes>
       </Suspense>
     </Router>
