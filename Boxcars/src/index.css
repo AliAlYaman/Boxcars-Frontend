@@ -13,6 +13,10 @@
 .bg-custom {
     background-image: url('assets/background/Main.png');
   } */
+  /* styles.css */
+  .custom-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
 
   .range-input::-webkit-slider-runnable-track {
     @apply bg-[#405FF2] h-2 rounded-lg;

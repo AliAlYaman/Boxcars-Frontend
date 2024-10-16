@@ -10,7 +10,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-primary text-white sticky top-0 z-50">
       <div className=" px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between py-6">
           <h1 className="font-dmSans text-2xl font-bold">BOXCARS</h1>

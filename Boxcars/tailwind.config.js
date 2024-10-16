@@ -11,7 +11,21 @@ export default {
       },
       fontFamily: {
         dmSans: ['DM Sans']
-      }
+      },
+      keyframes: {
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        fadeInSlow: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        slideInLeft: 'slideInLeft 2s ease-in forwards', // Adjusted duration for slower effect
+        fadeInSlow: 'fadeInSlow 3s ease-in forwards', // Slower duration for fading in
+      },
     },
   },
   plugins: [],

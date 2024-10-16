@@ -8,7 +8,7 @@ import {Register} from './components/Register';
 const LandingPage = lazy(() => import('./pages/LandingPage').then(module => ({ default: module.LandingPage })));
 const ListingPage = lazy(() => import('./pages/ListingPage').then(module => ({ default: module.ListingPage })));
 const Blog = lazy(() => import('./pages/Blog').then(module => ({ default: module.Blog })));
-
+const About = lazy(()=> import('./pages/About').then(module => ({ default: module.About })));
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path="/signin" element={<SignIn/>} />
           <Route path="/register" element={<Register/>} />
           <Route path="/blog" element={<Blog/>} />
+          <Route path="/about" element={<About/>} />
         </Routes>
       </Suspense>
     </Router>
