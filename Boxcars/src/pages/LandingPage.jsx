@@ -89,7 +89,7 @@ export const LandingPage = () => {
       <OurTeam />
       <BrowseType types={brands} text='Explore Our Premium Brands' />
       <Ad/>
-      <Footer/>
+      <Footer text={true}/>
     </>
   );
 };

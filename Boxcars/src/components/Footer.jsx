@@ -1,6 +1,6 @@
 export const Footer = ({ text = false }) => {
   return (
-    <footer className="bg-transparent py-10">
+    <footer className="bg-primary py-10">
       <div className={`px-8 sm:px-10 lg:px-12 ${text ? "text-white" : null}`}>
         {/* Subscription Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center max-md:items-start">
