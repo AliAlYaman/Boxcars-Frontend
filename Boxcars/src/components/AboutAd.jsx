@@ -25,9 +25,9 @@ export const AboutAd = () => {
                     </div>
                 </div>
 
-                <a href='/signin' className="cursor-pointer self-center lg:self-start bg-[#405FF2] px-6 py-3 rounded-xl text-white font-dmSans font-medium">
+                <Link to='/signin' className="cursor-pointer self-center lg:self-start bg-[#405FF2] px-6 py-3 rounded-xl text-white font-dmSans font-medium">
                     Get Started
-                </a>
+                </Link>
             </div>
         </div>
     );

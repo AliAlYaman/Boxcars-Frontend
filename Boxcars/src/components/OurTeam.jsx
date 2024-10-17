@@ -10,11 +10,11 @@ export const OurTeam = () => {
           View All
         </Link>
       </div>
-      <div className="flex justify-between items-center max-md:items-start max-md:flex-col gap-4">
-            <TeamCards/>
-            <TeamCards/>
-            <TeamCards/>
-            <TeamCards/>
+      <div className="flex   gap-8 justify-between items-center max-md:items-start max-md:flex-col">
+            <TeamCards src='assets/images/courtney.png' name='Courtney Henry' title='Development Manager'/>
+            <TeamCards src='assets/images/jerome.png' name='Jerome Bell' title='Software Tester'/>
+            <TeamCards src='assets/images/Arlen.png' name='Arlen McCoy' title='Software Developer'/>
+            <TeamCards src='assets/images/jenny.png' name='Jenny Wilson' title='UI/UX Designer'/>
         </div>
     </div>
   );

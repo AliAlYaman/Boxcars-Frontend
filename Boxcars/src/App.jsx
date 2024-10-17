@@ -3,6 +3,7 @@ import React, { Suspense, lazy } from 'react';
 import { LoadingAnimation } from './components/LoadingAnimation'; 
 import {SignIn} from './components/Signin';
 import {Register} from './components/Register';
+import { ScrollToTop } from './components/ScrollToTp';
 
 // Lazy load the pages with named exports
 const LandingPage = lazy(() => import('./pages/LandingPage').then(module => ({ default: module.LandingPage })));
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <Suspense fallback={<LoadingAnimation />}>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/listings" element={<ListingPage />} />

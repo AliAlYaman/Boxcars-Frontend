@@ -25,7 +25,7 @@ export const Navbar = () => {
             <Link to="/services">Services</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
-            <a href="/signin">Sign in</a>
+            <Link to="/signin">Sign in</Link>
           </div>
 
           {/* Mobile Menu Icon */}

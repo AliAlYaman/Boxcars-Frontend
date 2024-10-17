@@ -23,8 +23,8 @@ export default {
         },
       },
       animation: {
-        slideInLeft: 'slideInLeft 2s ease-in forwards', // Adjusted duration for slower effect
-        fadeInSlow: 'fadeInSlow 3s ease-in forwards', // Slower duration for fading in
+        slideInLeft: 'slideInLeft 1.2s ease-in forwards', // Adjusted duration for slower effect
+        fadeInSlow: 'fadeInSlow 2s ease-in forwards', // Slower duration for fading in
       },
     },
   },
