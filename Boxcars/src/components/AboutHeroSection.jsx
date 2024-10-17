@@ -19,7 +19,7 @@ export const AboutHeroSection = () => {
             </p>
   
             {/* Right Section */}
-            <div className="flex flex-col text-base sm:w-1/2 gap-4 animate-fadeInSlow">
+            <div className="flex flex-col text-base sm:w-1/2 gap-4 animate-fadeInSlow text-primary font-medium">
               <p>
                 Lorem ipsum dolor sit amet consectetur. Convallis integer enim eget sit urna. Eu duis lectus amet vestibulum varius. Nibh tellus sit sit at lorem facilisis. Nunc vulputate ac interdum aliquet vestibulum in tellus.
               </p>

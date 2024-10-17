@@ -6,10 +6,10 @@ import { Footer } from "./Footer";
 
 export const Register = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-white">
       <Navbar />
       <div className="flex flex-col items-center justify-center min-h-screen mb-20 px-4 sm:px-6 lg:px-8">
-        <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
+        <div className="w-full max-w-md bg-white rounded-lg shadow-2xl p-8">
           {/* Tabs */}
           <div className="flex space-x-4 mb-6 font-semibold text-base font-dmSans justify-start">
             <Link to="/signin" className="pb-1">

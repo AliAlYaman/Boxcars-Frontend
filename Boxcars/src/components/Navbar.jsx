@@ -25,12 +25,12 @@ export const Navbar = () => {
             <Link to="/services">Services</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/signin">Sign in</Link>
+            <a href="/signin">Sign in</a>
           </div>
 
           {/* Mobile Menu Icon */}
           <div className="flex lg:hidden">
-            <button onClick={toggleMobileMenu} className="text-gray-800">
+            <button onClick={toggleMobileMenu} className="text-white">
               <Menu className="h-6 w-6" />
             </button>
           </div>
@@ -38,7 +38,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden">
+          <div className="lg:hidden py-8">
           <div className="flex flex-col space-y-4 pb-6 px-4 font-semibold bg-gray-900 text-white rounded-md shadow-lg">
             <Link 
               to="/" 
