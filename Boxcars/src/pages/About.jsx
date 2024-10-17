@@ -1,6 +1,7 @@
 import { AboutAd } from "../components/AboutAd"
 import { AboutHeroSection } from "../components/AboutHeroSection"
 import { BrowseType } from "../components/BrowseType"
+import { FAQ } from "../components/FAQ"
 import { Features } from "../components/Features"
 import { Footer } from "../components/Footer"
 import { Navbar } from "../components/Navbar"
@@ -49,6 +50,7 @@ export const About = ()=> {
     <BrowseType types={brands} text='Explore Our Premium Brands'/>
     <OurTeam/>
     <Reviews/>
+    <FAQ/>
     <Footer text={true}/>
     </>)
 }
