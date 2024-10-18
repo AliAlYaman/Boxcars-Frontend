@@ -68,7 +68,7 @@ export const Listings = () => {
   return (
     <div className="bg-white h-full rounded-[48px] px-4 sm:px-6 lg:px-8">
   <div className="py-8 sm:py-12 lg:py-16">
-    <p className="font-dmSans text-center sm:text-left mb-4 sm:mb-6 px-4">
+    <p className="font-dmSans sm:text-left mb-4 sm:mb-6 px-4">
       <span className="text-blue-500">Home</span>/Listing
     </p>
     <p className="px-4 mb-8 text-4xl font-dmSans font-bold">Listings</p>

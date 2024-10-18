@@ -1,30 +1,50 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import React, { Suspense, lazy } from 'react';
-import { LoadingAnimation } from './components/LoadingAnimation'; 
-import {SignIn} from './components/Signin';
-import {Register} from './components/Register';
-import { ScrollToTop } from './components/ScrollToTp';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { LoadingAnimation } from "./components/LoadingAnimation";
+import { SignIn } from "./components/Signin";
+import { Register } from "./components/Register";
+import { ScrollToTop } from "./components/ScrollToTp";
 
 // Lazy load the pages with named exports
-const LandingPage = lazy(() => import('./pages/LandingPage').then(module => ({ default: module.LandingPage })));
-const ListingPage = lazy(() => import('./pages/ListingPage').then(module => ({ default: module.ListingPage })));
-const Blog = lazy(() => import('./pages/Blog').then(module => ({ default: module.Blog })));
-const About = lazy(()=> import('./pages/About').then(module => ({ default: module.About })));
-const NotFound = lazy(()=> import("./pages/NotFound").then(module => ({ default: module.NotFound})));
+const LandingPage = lazy(() =>
+  import("./pages/LandingPage").then((module) => ({
+    default: module.LandingPage,
+  }))
+);
+const ListingPage = lazy(() =>
+  import("./pages/ListingPage").then((module) => ({
+    default: module.ListingPage,
+  }))
+);
+const Blog = lazy(() =>
+  import("./pages/Blog").then((module) => ({ default: module.Blog }))
+);
+const About = lazy(() =>
+  import("./pages/About").then((module) => ({ default: module.About }))
+);
+const NotFound = lazy(() =>
+  import("./pages/NotFound").then((module) => ({ default: module.NotFound }))
+);
+const CarDetails = lazy(() =>
+  import("./pages/CarDetails").then((module) => ({
+    default: module.CarDetails,
+  }))
+);
 
 function App() {
   return (
     <Router>
       <Suspense fallback={<LoadingAnimation />}>
-      <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/listings" element={<ListingPage />} />
-          <Route path="/signin" element={<SignIn/>} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path='*' element={<NotFound/>} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/car-details" element={<CarDetails />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </Router>

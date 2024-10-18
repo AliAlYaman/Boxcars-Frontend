@@ -37,7 +37,8 @@ export const CarCard = ({src, title, subtitle, miles, petrol, gear, price}) => {
         <div className="flex justify-between items-center w-full">
           <p className="font-semibold text-xl text-gray-900">{price}</p>
           <Link
-            to=""
+            to="/car-details"
+            state={{ src, title, subtitle, miles, petrol, gear, price }}
             className="text-blue-500 hover:text-blue-700 font-medium"
           >
             View Details
