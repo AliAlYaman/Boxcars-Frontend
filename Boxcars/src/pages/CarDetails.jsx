@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
 import { CarDetailsCard } from "../components/CarDetailsCard";
+import { CarOverview } from "../components/CarOverview";
 
 export const CarDetails = () => {
   const location = useLocation();
@@ -10,6 +11,7 @@ export const CarDetails = () => {
     <>
     <Navbar/>
     <CarDetailsCard src={src}  title={title} subtitle={subtitle} miles={miles} petrol={petrol} gear={gear} price={price} />
+    <CarOverview/>
     </>
   );
 };

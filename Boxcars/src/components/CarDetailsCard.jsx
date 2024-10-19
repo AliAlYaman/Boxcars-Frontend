@@ -9,7 +9,7 @@ export const CarDetailsCard = ({
   }) => {
     return (
       <div className="custom-padding">
-        <div className="py-8 sm:py-12 lg:py-16 px-4">
+        <div className="pt-8 sm:pt-12 lg:pt-16">
           {/* Breadcrumb and Title */}
           <p className="font-dmSans sm:text-left mb-4 sm:mb-6">
             <span className="text-blue-500">Home/Listing</span>/{title}
@@ -37,7 +37,7 @@ export const CarDetailsCard = ({
               <div className="flex items-center gap-2">
                 <p className="font-dmSans text-sm sm:text-base">Compare</p>
                 <div className="flex justify-center items-center px-2 py-2 rounded-full border border-gray-300">
-                  <img src="assets/icons/document.png" alt="Compare" />
+                  <img src="assets/icons/vin.png" alt="Compare" />
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@ export const CarDetailsCard = ({
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-2">
             <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-0">
               <div className="flex gap-2 items-center px-4 sm:px-6 py-1 rounded-full bg-[#E9F2FF]">
-                <img src="assets/icons/Miles.png" alt="Miles" />
+                <img src="assets/icons/miles.png" alt="Miles" />
                 <p className="text-sm sm:text-base">{miles}</p>
               </div>
               <div className="flex gap-2 items-center px-4 sm:px-6 py-1 rounded-full bg-[#E9F2FF]">
