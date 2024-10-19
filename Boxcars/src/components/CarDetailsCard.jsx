@@ -51,7 +51,7 @@ export const CarDetailsCard = ({
                 <p className="text-sm sm:text-base">{miles}</p>
               </div>
               <div className="flex gap-2 items-center px-4 sm:px-6 py-1 rounded-full bg-[#E9F2FF]">
-                <img src="assets/icons/calendar.png" alt="Calendar" width={18} />
+                <img src="assets/icons/year.png" alt="Calendar" width={18} />
                 <p className="text-sm sm:text-base">{miles}</p>
               </div>
               <div className="flex gap-2 items-center px-4 sm:px-6 py-1 rounded-full bg-[#E9F2FF]">
