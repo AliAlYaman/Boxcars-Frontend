@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const CarCard = ({src, title, subtitle, miles, petrol, gear, price}) => {
   return (
-    <div className="flex flex-col justify-between items-start bg-white rounded-lg shadow-lg overflow-hidden max-md:w-full mb-20">
+    <div className="flex flex-col justify-between items-start bg-white rounded-lg shadow-lg overflow-hidden max-md:w-full mb-20 w-full">
       {/* Image Section */}
       <div className="w-full">
         <img
@@ -20,7 +20,7 @@ export const CarCard = ({src, title, subtitle, miles, petrol, gear, price}) => {
         {/* Features Section */}
         <div className="flex justify-between items-center w-full mb-4 ">
           <div className="flex flex-col items-center space-x-1 gap-1">
-            <img src="assets/icons/Miles.png" width={25} alt="Miles Icon" />
+            <img src="assets/icons/miles.png" width={25} alt="Miles Icon" />
             <p className="text-sm text-gray-700">{miles}</p>
           </div>
           <div className="flex flex-col items-center space-x-1 gap-1">

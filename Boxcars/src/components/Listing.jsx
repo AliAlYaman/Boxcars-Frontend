@@ -74,20 +74,21 @@ export const Listings = () => {
     <p className="px-4 mb-8 text-4xl font-dmSans font-bold">Listings</p>
     <div className="flex flex-col items-center">
       {/* Car Cards Container */}
-      <div className="flex justify-around items-center gap-2 flex-wrap w-full">
-        {currentCars.map((car) => (
-          <CarCard
-            key={car.id}
-            src={car.src}
-            title={car.title}
-            subtitle={car.subtitle}
-            miles={car.miles}
-            petrol={car.petrol}
-            gear={car.gear}
-            price={car.price}
-          />
-        ))}
-      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full h-full">
+  {currentCars.map((car) => (
+    <CarCard
+      key={car.id}
+      src={car.src}
+      title={car.title}
+      subtitle={car.subtitle}
+      miles={car.miles}
+      petrol={car.petrol}
+      gear={car.gear}
+      price={car.price}
+    />
+  ))}
+</div>
+
 
       {/* Pagination Controls */}
       <div className="flex flex-col sm:flex-row justify-between items-center w-full max-w-xs sm:max-w-md mt-8">
